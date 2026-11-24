@@ -1,4 +1,4 @@
-resource "aws_security_group" "allow_tls" {
+resource "aws_security_group" "main" {
   name        = local.final_sg_name
   description = "Allow traffic for ${var.sg_name}"
   vpc_id      = var.vpc_id
